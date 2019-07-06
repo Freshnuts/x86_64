@@ -25,4 +25,4 @@ start:
         mov ecx, info               ; file contents
         mov ebx, 1                  ; stdout
         mov eax, 4
-        int 0x8
+        int 0x80
