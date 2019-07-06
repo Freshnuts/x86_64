@@ -2,7 +2,7 @@ section .bss
 info    resb 24
 
 section .data
-flag db '/home/orw/flag'
+flag db '/home/file.txt'
 
 section .text
 global _start
