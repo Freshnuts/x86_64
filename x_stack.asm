@@ -3,10 +3,10 @@ global _start
 
 _start:
 		; push string '/root/lab/flag' onto stack (local flag). little endian
-		push 0x00006761				; ag\x00\x00
-		push 0x6c662f62				; b/fl
-		push 0x616c2f74				; t/la
-		push 0x6f6f722f				; /roo
+        push 0x00006761				; ag\x00\x00
+        push 0x6c662f62				; b/fl
+        push 0x616c2f74				; t/la
+        push 0x6f6f722f				; /roo
 
 
         ; 5 sys_open('filepath', 0)
