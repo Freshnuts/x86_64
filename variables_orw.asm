@@ -1,9 +1,3 @@
-section .bss
-info    resb 24
-
-section .data
-flag db '/home/file.txt'
-
 section .text
 global _start
 
@@ -26,3 +20,9 @@ start:
         mov ebx, 1                  ; stdout
         mov eax, 4
         int 0x80
+
+section .bss
+info    resb 24
+
+section .data
+flag db '/home/file.txt'
