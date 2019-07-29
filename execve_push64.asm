@@ -1,6 +1,3 @@
-section .data
-binsh db '/bin/sh'
-
 section .text
 global _start
 
@@ -12,3 +9,6 @@ _start:
         mov rdx, 0
         mov rax, 0x3b
         syscall
+
+section .data
+binsh db '/bin/sh'
